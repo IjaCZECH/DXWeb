@@ -7,9 +7,20 @@ using DX.Data.Xpo.Identity;
 using DevExpress.Xpo;
 using DX.Data.Xpo;
 using DX.Data.Xpo.Identity.Persistent;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
 
 namespace DX.Test.Web.Core.Models
 {
+	public class ApplicationUserManager : XPUserManager<ApplicationUser, XpoApplicationUser, XpoApplicationRole>
+	{
+		public ApplicationUserManager(IUserStore<ApplicationUser> store, IOptions<IdentityOptions> optionsAccessor,
+		IPasswordHasher<ApplicationUser> passwordHasher,
+		IEnumerable<IUserValidator<ApplicationUser>> userValidators,
+		IEnumerable<IPasswordValidator<ApplicationUser>> passwordValidators, ILookupNormalizer keyNormalizer,
+		IdentityErrorDescriber errors, IServiceProvider services, ILogger<ApplicationUserManager> logger)
+		: base(store, optionsAccessor, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger) { }
+	}
 	public class ApplicationUserMapper : XPUserMapper<ApplicationUser, XpoApplicationUser>
 	{
 		public override XpoApplicationUser Assign(ApplicationUser source, XpoApplicationUser destination)

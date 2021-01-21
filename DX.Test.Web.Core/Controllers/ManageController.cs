@@ -20,7 +20,7 @@ namespace DX.Test.Web.Core.Controllers
     [Route("[controller]/[action]")]
     public class ManageController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ApplicationUserManager _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
@@ -35,7 +35,7 @@ namespace DX.Test.Web.Core.Controllers
           ILogger<ManageController> logger,
           UrlEncoder urlEncoder)
         {
-            _userManager = userManager;
+            _userManager = (ApplicationUserManager)userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = logger;
