@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>20.2.3.12</Version>
+    <Version>20.2.3.20</Version>
     <FileVersion>20.2.3.12</FileVersion>
     <Authors>Don Wibier (DevExpress)</Authors>
     <Description>XPO Based storage provider for ASP.NET Identity</Description>
@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
 	<LangVersion>7.3</LangVersion>
 	<PackageProjectUrl>https://github.com/donwibier/DXWeb/tree/master/DX.Utils</PackageProjectUrl>
     <!--<PackageIconUrl>https://www.devexpress.com/favicon.ico</PackageIconUrl>-->
@@ -44,31 +44,16 @@
       <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <RepositoryUrl>https://github.com/donwibier/DXWeb</RepositoryUrl>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-	  <Reference Include="System.Configuration" />
-	  <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="DevExpress.Xpo" Version="20.2.3" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.2" />
       
   </ItemGroup>
 
 	<ItemGroup>    
     <ProjectReference Include="..\DX.Data.Xpo\DX.Data.Xpo.csproj" />
     <ProjectReference Include="..\DX.Utils\DX.Utils.csproj" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
-    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
   </ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">

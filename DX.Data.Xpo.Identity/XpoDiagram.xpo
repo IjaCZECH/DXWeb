@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="faccfc9d-b8d3-423a-b210-08be3169c70b" namespace="DX.Data.Xpo.Identity.Persistent" dataBaseShemaInfo="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" generateStoredProcedures="false" fieldNameCase="Unchanged" fieldNamePrefix="_" generateDefaultConstructors="false" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="20.1.3.0" name="XpoDiagram" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="faccfc9d-b8d3-423a-b210-08be3169c70b" namespace="DX.Data.Xpo.Identity.Persistent" dataBaseShemaInfo="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" generateStoredProcedures="false" fieldNameCase="Unchanged" fieldNamePrefix="_" generateDefaultConstructors="false" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="20.1.3.0" name="XpoDiagram" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
   <classes>
     <dataBaseObjectModelHasClasses Id="80f46174-38a5-4740-9546-6286fe4f8797">
       <xpObject Id="0fb14883-6b9d-4b33-a8c2-f076385680cb" name="XpoDxRole" baseClass="XpoDxBase" userFileName="XpoDxRole" designerFileName="XpoDxRole.Designer" className="XpoDxRole" virtualBaseClass="XpoDxBase" persistent="DXRoles" virtualName="XpoDxRole">
@@ -52,6 +52,9 @@
           <aggregation Id="311ac65a-f4ee-4db1-bdef-f4cd07b51c69" sourceCollectionName="Claims" name="XpoDxRoleClaimReferencesXpoDxRole" targetFieldName="Role">
             <xpObjectMoniker Id="c9696ad2-1555-4607-8f17-063b6e82a15a" />
           </aggregation>
+          <aggregation Id="60f81b19-7cad-4f9d-9dd5-1a6958516e30" sourceCollectionName="Aliens" name="XpoDxExtendedUserRoleReferencesXpoDxRole" targetFieldName="Role">
+            <xpObjectMoniker Id="39d73b5d-25e2-4fb1-a55b-89639db1627e" />
+          </aggregation>
         </aggrTarget>
         <mMTarget>
           <manyToManyRelationship Id="a134a7bf-c299-480f-a4b7-a273f08dd0ba" sourceCollectionName="Users" name="XpoDxUsersRoles" targetCollectionName="Roles">
@@ -64,6 +67,9 @@
           </xpObjectHasCollectionFields>
           <xpObjectHasCollectionFields Id="5fa6b0ae-aab7-45e9-862e-4f645281bd41">
             <collectionField Id="d645ead8-7f11-4c91-aba0-60b65d104e82" name="Claims" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="90393578-73d8-4242-a388-8e4472ff87d5">
+            <collectionField Id="10be9158-287a-4a99-8983-56dba17bdd1d" name="Aliens" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
@@ -188,6 +194,9 @@
           <aggregation Id="875b6c53-1f8d-4a18-bf5c-522f35365847" sourceCollectionName="Claims" name="XpoDxUserClaimReferencesXpoDxUser" targetFieldName="User">
             <xpObjectMoniker Id="60dc4763-56b5-4b17-897d-86b9ce867aed" />
           </aggregation>
+          <aggregation Id="ba02dbd7-3854-4685-ba33-e3ed7db94cbc" sourceCollectionName="Aliens" name="XpoDxExtendedUserRoleReferencesXpoDxUser" targetFieldName="User">
+            <xpObjectMoniker Id="39d73b5d-25e2-4fb1-a55b-89639db1627e" />
+          </aggregation>
         </aggrTarget>
         <collectionFields>
           <xpObjectHasCollectionFields Id="e0166693-9c4b-4d2b-9bd8-3870b54a5eee">
@@ -201,6 +210,9 @@
           </xpObjectHasCollectionFields>
           <xpObjectHasCollectionFields Id="dcc88211-52ec-4ac8-a31c-89f5d1dc3c04">
             <collectionField Id="98c10f65-79c5-4691-98f2-6b56656696a7" name="Claims" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="672976f7-52d9-40f1-8ed8-6a57bea5a851">
+            <collectionField Id="77919098-4046-41f5-96c9-3aa1dc60277b" name="Aliens" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
@@ -343,6 +355,21 @@
             <xpObjectMoniker Id="2dca73d7-bb00-425d-967f-0fcd3e782a3e" />
           </inheritance>
         </superClass>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2b460df9-9591-473c-acb8-1d748bfb5af1">
+      <xpObject Id="39d73b5d-25e2-4fb1-a55b-89639db1627e" name="XpoDxAlienUserRole" baseClass="XPObject" userFileName="XpoDxAlienUserRole" designerFileName="XpoDxAlienUserRole.Designer" className="XpoDxAlienUserRole" persistent="DXAlienUserRole" virtualName="XpoDxAlienUserRole">
+        <fields>
+          <generalXpObjectHasFields Id="ddb005d9-1445-4f8f-a456-0bea3677de3a">
+            <field Id="33649962-00d3-48f5-8342-c63ef071e6a4" name="User" virtualColumnType="XpoDxUser" logicalType="XpoDxUser" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4b839b97-767b-47bf-a61e-cafd8c539b8a">
+            <field Id="10bd0113-7864-4a6e-8811-47dc848cdd76" name="Role" virtualColumnType="XpoDxRole" logicalType="XpoDxRole" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="aa43b561-24a5-4777-b24b-8be9e384e4ac">
+            <field Id="b618a94e-e102-43bc-839a-798a85b56c64" name="AlienID" columnType="Int32" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
   </classes>

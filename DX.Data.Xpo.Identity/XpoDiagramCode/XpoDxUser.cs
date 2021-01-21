@@ -51,6 +51,8 @@ namespace DX.Data.Xpo.Identity.Persistent
 		//        }
 		//#endif       
 
+		public IList AliensList { get { return Aliens; } }
+
 		public IList RolesList { get { return Roles; } }
 
 		public IList ClaimsList { get { return Claims; } }

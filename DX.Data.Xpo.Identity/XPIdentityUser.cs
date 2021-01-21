@@ -150,6 +150,11 @@ namespace DX.Data.Xpo.Identity
 		public virtual IList RolesList { get; protected set; }
 
 		/// <summary>
+		///     Navigation property for user roles
+		/// </summary>
+		public virtual IList AliensList { get; protected set; }
+
+		/// <summary>
 		///     Navigation property for user claims
 		/// </summary>
 		public virtual IList ClaimsList { get; protected set; }

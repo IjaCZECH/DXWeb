@@ -56,7 +56,8 @@ namespace DX.Data.Xpo.Identity
 
         string SecurityStamp { get; set; }
         string PasswordHash { get; set; }
-		IList RolesList { get; }
+        IList AliensList { get; }
+        IList RolesList { get; }
 		IList ClaimsList { get; }
 		IList LoginsList { get; }
 
