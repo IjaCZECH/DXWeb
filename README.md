@@ -40,7 +40,8 @@ public void ConfigureServices(IServiceCollection services)
 					new ApplicationUserMapper(), 
 					new ApplicationRoleMapper(),
 					new XPUserStoreValidator<string, ApplicationUser, XpoApplicationUser>(),
-					new XPRoleStoreValidator<string, ApplicationRole, XpoApplicationRole>())				
+					new XPRoleStoreValidator<string, ApplicationRole, XpoApplicationRole>())
+		.AddUserManager<ApplicationUserManager>()
                 .AddDefaultTokenProviders();
 
             // Add other services ...
