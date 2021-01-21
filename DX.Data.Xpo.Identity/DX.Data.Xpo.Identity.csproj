@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>20.2.3.20</Version>
+    <Version>20.2.3.23</Version>
     <FileVersion>20.2.3.12</FileVersion>
     <Authors>Don Wibier (DevExpress)</Authors>
     <Description>XPO Based storage provider for ASP.NET Identity</Description>
@@ -9,8 +9,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
-	<LangVersion>7.3</LangVersion>
-	<PackageProjectUrl>https://github.com/donwibier/DXWeb/tree/master/DX.Utils</PackageProjectUrl>
+	<LangVersion>8.0</LangVersion>
+	<PackageProjectUrl>https://github.com/IjaCZECH/DXWeb/tree/master/DX.Utils</PackageProjectUrl>
     <!--<PackageIconUrl>https://www.devexpress.com/favicon.ico</PackageIconUrl>-->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>DXWeb Wibier DevExpress XPO ORM Microsoft Identity Advantage SQL Anywhere Sybase DB2 Interbase/Firebird MS-Access Oracle Pervasive PostgreSQL SQLite VistaDB MS-SQL MySQL</PackageTags>
@@ -42,7 +42,7 @@
 		17.2.3.1: Initial dual mode package for .NET Framework and .NET Standard 2.0
 		Not operational on .NET Standard 2.0 yet</PackageReleaseNotes>
       <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <RepositoryUrl>https://github.com/donwibier/DXWeb</RepositoryUrl>
+    <RepositoryUrl>https://github.com/IjaCZECH/DXWeb</RepositoryUrl>
   </PropertyGroup>
   
   <ItemGroup>

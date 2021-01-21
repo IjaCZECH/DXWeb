@@ -26,11 +26,16 @@ namespace DX.Data.Xpo.Identity
         : base(store, optionsAccessor, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger)
         {
             _store = (XPUserStore<string, TUser, TXPOUser, TXPORole, XpoDxUserLogin, XpoDxUserClaim, XpoDxUserToken>)store;
-        } 
+        }
 
         public Task AddToAlienRoleAsync(TUser user, string roleName, int alienID)
         {
             return _store.AddToAlienRoleAsync(user, roleName.ToUpper(), alienID);
+        }
+
+        public Task<IList<int>> GetAliensAsync(TUser user)
+        {
+            return _store.GetAliensAsync(user);
         }
 
         public Task<IList<string>> GetAlienRolesAsync(TUser user, int alienID)
