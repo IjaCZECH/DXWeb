@@ -38,6 +38,11 @@ namespace DX.Data.Xpo.Identity
             return _store.GetAliensAsync(user);
         }
 
+        public Task<IList<int>> GetAliensAsync(TUser user, string roleName)
+        {
+            return _store.GetAliensAsync(user, roleName.ToUpper());
+        }
+
         public Task<IList<string>> GetAlienRolesAsync(TUser user, int alienID)
         {
             return _store.GetAlienRolesAsync(user, alienID);

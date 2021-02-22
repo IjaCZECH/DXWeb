@@ -735,6 +735,13 @@ namespace DX.Data.Xpo.Identity
             return await GetAliensAsync(user);
         }
 
+        public async virtual Task<IList<int>> GetAliensAsync(TUser user, string roleName,
+            CancellationToken cancellationToken = default(CancellationToken))
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            return await GetAliensAsync(user, roleName);
+        }
+
         public async virtual Task<IList<TUser>> GetAlienUsersInRoleAsync(string roleName, int alienID,
             CancellationToken cancellationToken = default(CancellationToken))
         {
@@ -882,6 +889,23 @@ namespace DX.Data.Xpo.Identity
             }, false);
             return result;
         }
+        public async virtual Task<IList<int>> GetAliensAsync(TUser user, string roleName)
+        {
+            ThrowIfDisposed();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+            var userId = user.Id;
+            var result = await DB.ExecuteAsync((db, wrk) =>
+            {
+                List<string> r = new List<string>();
+
+                XPCollection<XpoDxAlienUserRole> collection = new XPCollection<XpoDxAlienUserRole>(wrk, CriteriaOperator.Parse("Role.NormalizedName == ? AND User.Id == ?", roleName, userId), null);
+                return collection.Select(x => x.AlienID).Distinct().ToList();
+            }, false);
+            return result;
+        }
 
         public async virtual Task<IList<string>> GetAlienRolesAsync(TUser user, int alienID)
         {
@@ -896,7 +920,7 @@ namespace DX.Data.Xpo.Identity
                 List<string> r = new List<string>();
                 foreach (XpoDxAlienUserRole alien in new XPCollection(wrk, typeof(XpoDxAlienUserRole),
                          CriteriaOperator.Parse("User.Id == ? AND AlienID == ?", userId, alienID),
-                         new SortProperty("Name", SortingDirection.Ascending)))
+                         new SortProperty("Role.Name", SortingDirection.Ascending)))
                 {
                     r.Add(alien.Role.Name);
                 }
